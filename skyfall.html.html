@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RENGANATHAN PORTFOLIO </title>
+  <style>
+    :root {
+      --bg-dark: #0f172a;
+      --accent: #38bdf8;
+      --card-bg: rgba(255, 255, 255, 0.05);
+      --text: #e2e8f0;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg-dark);
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px 30px;
+      background: linear-gradient(to right, #1e293b, #0f172a);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: var(--accent);
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.1rem;
+      color: #94a3b8;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 30px 20px;
+    }
+
+    .section {
+      background: var(--card-bg);
+      border-radius: 16px;
+      padding: 25px;
+      margin-bottom: 40px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 25px rgba(0, 255, 255, 0.07);
+    }
+
+    .section h2 {
+      margin-bottom: 10px;
+      color: var(--accent);
+    }
+
+    .section p {
+      color: #cbd5e1;
+    }
+
+    .slider {
+      position: relative;
+      overflow: hidden;
+      border-radius: 20px;
+      margin-bottom: 30px;
+      box-shadow:
+        0 0 20px rgba(56, 189, 248, 0.4),
+        0 0 40px rgba(56, 189, 248, 0.2),
+        0 0 60px rgba(56, 189, 248, 0.1);
+      transition: box-shadow 0.4s ease-in-out;
+    }
+
+    .slider:hover {
+      box-shadow:
+        0 0 25px rgba(56, 189, 248, 0.5),
+        0 0 50px rgba(56, 189, 248, 0.3),
+        0 0 80px rgba(56, 189, 248, 0.2);
+    }
+
+    .slides {
+      display: flex;
+      width: 100%;
+      transition: transform 0.6s ease-in-out;
+    }
+
+    .slide {
+      min-width: 100%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .slide img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      display: block;
+      border-radius: 10px 10px 0 0;
+    }
+
+    .desc {
+      background-color: rgba(15, 23, 42, 0.7);
+      padding: 20px;
+      text-align: center;
+      color: #e2e8f0;
+      width: 100%;
+    }
+
+    .desc h3 {
+      margin-bottom: 8px;
+      color: #38bdf8;
+      font-size: 1.2rem;
+    }
+
+    .desc p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: #cbd5e1;
+    }
+
+    .nav-buttons {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+      padding: 0 20px;
+    }
+
+    .nav-buttons button {
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      font-size: 2rem;
+      cursor: pointer;
+      padding: 10px;
+      border-radius: 50%;
+      transition: background 0.3s;
+    }
+
+    .nav-buttons button:hover {
+      background: rgba(0, 0, 0, 0.7);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 0;
+      color: #64748b;
+    }
+
+    @media (max-width: 600px) {
+      .slide img {
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Renganathan Portfolio</h1>
+    <p>I like photography | some clicks! beauty of sky</p>
+  </header>
+
+  <div class="container">
+    <section class="section">
+      <h2>🌤️ About Me</h2>
+      <p>Hi, I'm Renganathan, a final-year BCA student at Srimad andavan arts and science collage. Ever since I can remember, I've been captivated by the sky. There's something peaceful and poetic about watching clouds drift by — they feel like nature's own canvas, constantly changing and telling silent stories.
+
+Whenever I spot a beautiful cloud, I love to take a quick photo. It has become more than a hobby — it’s a quiet form of therapy. In my free time, I often find myself watching the sky, talking to the clouds, and finding comfort in their calm presence. They remind me to slow down, breathe, and enjoy the simple beauty of life.
+
+This portfolio is a collection of those moments — of skies that made me stop and smile. Through these pictures and quotes, I hope you too can feel the peace and wonder that clouds bring into our lives.</p>
+    </section>
+
+    <section class="section">
+      <h2>Beauty of sky Slideshows 🎞️</h2>
+
+      <!-- Slideshow 1 -->
+      <div class="slider" id="slider1">
+        <div class="slides">
+          <div class="slide">
+            <img src="project1.jpg.jpg" alt="">
+            <div class="desc">
+              <h3>Appearance of the atmosphere</h3>
+              <p>The clouds carry the dreams of dreamers everywhere.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="project2.jpg" alt="">
+            <div class="desc">
+              <h3>Find your ray of hope.</h3>
+              <p>Under a canopy of clouds, the world seems to stand still. Each formation a masterpiece, sketched by the winds of time. Dive into the infinite art gallery above us.✨</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="project3.jpg" alt="">
+            <div class="desc">
+              <h3>In the midst of dark clouds</h3>
+              <p>Dark clouds remind us that even in the darkest times, beauty can still be found.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="project4.jpg" alt="">
+            <div class="desc">
+              <h3>Gloomy and stormy</h3>
+              <p>even in the darkest times, there's always a potential for hope, a silver lining, or a reminder of brighter days to come.</p>
+            </div>
+          </div>
+        </div>
+        <div class="nav-buttons">
+          <button onclick="prevSlide(1)">❮</button>
+          <button onclick="nextSlide(1)">❯</button>
+        </div>
+      </div>
+
+      <!-- Slideshow 2 -->
+      <div class="slider" id="slider2">
+        <div class="slides">
+          <div class="slide">
+            <img src="project5.jpg" alt="">
+            <div class="desc">
+              <h3>Rayleigh scattering</h3>
+              <p>The orange sky reminds me that beauty can be found in the simplest moments.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="project6.jpg" alt="">
+            <div class="desc">
+              <h3>Cumulus clouds</h3>
+              <p>The sky above was full of tumultuous, dark, ragged clouds. A sky of mackerel clouds, crimson and amber-tinted.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="project7.jpg" alt="">
+            <div class="desc">
+              <h3>Threatening rain</h3>
+              <p>It was a grey afternoon with a dull sky, threatening rain.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="project8.jpg" alt="">
+            <div class="desc">
+              <h3>Wild blue yonder</h3>
+              <p>To many people a blue sky would invoke the idea of freedom and calmness where as a rainy and cloudy sky would invoke sadness or suffering which is a lot like the image of Hell.</p>
+            </div>
+          </div>
+        </div>
+        <div class="nav-buttons">
+          <button onclick="prevSlide(2)">❮</button>
+          <button onclick="nextSlide(2)">❯</button>
+        </div>
+      </div>
+
+      <!-- Slideshow 3 -->
+      <div class="slider" id="slider3">
+        <div class="slides">
+          <div class="slide">
+            <img src="project9.jpg" alt="">
+            <div class="desc">
+              <h3>Cumulus Clouds</h3>
+              <p>The white clouds are typically cumulus clouds, which are puffy and white due to the way they scatter sunlight. The dark blue sky indicates a clear, high-pressure system.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="project10.jpg" alt="">
+            <div class="desc">
+              <h3>Sunlight is scattered</h3>
+              <p>A common and beautiful sight, often seen on sunny days, especially after a rain shower.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="project11.jpg" alt="">
+            <div class="desc">
+              <h3>sunshiny</h3>
+              <p>In the daytime, it showcases a vibrant blue canvas, often with the sun shining brightly, casting down its golden rays.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="project12.jpg" alt="">
+            <div class="desc">
+              <h3>Clouds from the sky</h3>
+              <p>People often see shapes and patterns in clouds, such as animals, faces, or objects. This is a form of pareidolia.</p>
+            </div>
+          </div>
+        </div>
+        <div class="nav-buttons">
+          <button onclick="prevSlide(3)">❮</button>
+          <button onclick="nextSlide(3)">❯</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 Renganathan | All Rights Reserved
+  </footer>
+
+  <script>
+    const sliders = {
+      1: { index: 0, element: document.querySelector('#slider1 .slides') },
+      2: { index: 0, element: document.querySelector('#slider2 .slides') },
+      3: { index: 0, element: document.querySelector('#slider3 .slides') }
+    };
+
+    function showSlide(sliderId, index) {
+      const slider = sliders[sliderId];
+      const total = slider.element.children.length;
+      slider.index = (index + total) % total;
+      slider.element.style.transform = `translateX(-${slider.index * 100}%)`;
+    }
+
+    function nextSlide(sliderId) {
+      showSlide(sliderId, sliders[sliderId].index + 1);
+    }
+
+    function prevSlide(sliderId) {
+      showSlide(sliderId, sliders[sliderId].index - 1);
+    }
+
+    setInterval(() => nextSlide(1), 5000);
+    setInterval(() => nextSlide(2), 6000);
+    setInterval(() => nextSlide(3), 7000);
+  </script>
+</body>
+</html>
